@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-import { Header } from "@/app/components/Header";
+import { Header } from "@/components/Header";
+import { createCards, Cards } from "@/components/Cards";
+import { ReadMoreOption } from "@/components/ReadMoreOption";
 
 
 export default function Home() {
@@ -18,10 +20,17 @@ export default function Home() {
 
       <section className="mb-12 py-20">
         <h2 className="text-4xl font-bold mb-6">Quem Somos</h2>
-        <p className="text-gray-400 leading-relaxed">
+        <p className="text-gray-400 leading-relaxed mb-6">
           Somos uma equipe apaixonada por qualidade de software, composta por engenheiros experientes e comprometidos.
           Atuamos com clientes globais, entregando serviços de QA de alto impacto com agilidade, transparência e tecnologia de ponta.
         </p>
+        <div className="grid grid-cols-3 gap-4">
+          {createCards({ title: 'Outro Card 1', image:'image', readMore: ReadMoreOption })}
+          {createCards({ title: 'Outro Card 2', image:'image', readMore: ReadMoreOption })}
+          {createCards({ title: 'Outro Card 3', image:'image', readMore: ReadMoreOption })}
+        </div>
+        
+        
       </section>
 
       <section className="mb-12 py-20">

@@ -19,7 +19,7 @@ export function Header() {
 
       {/* Imagem ilustrativa */}
       <div className="flex-1 hidden md:flex justify-center">
-        <img src="/qa-illustration.svg" alt="Ilustração de QA" className="max-w-xs" />
+        <img src="/imagemheader.svg" alt="Ilustração de QA" className="max-w-xs" />
       </div>
     </header>
   );
