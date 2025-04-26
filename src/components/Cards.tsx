@@ -1,9 +1,10 @@
 import { ReadMoreOption } from "@/components/ReadMoreOption";
 
+
 interface CreateCardsProps {
-    image?: string; // URL da imagem, opcional
-    title?: string; // Título do card, opcional
-    readMore?: typeof ReadMoreOption; // Componente ReadMoreOption, opcional
+    image: string; // URL da imagem, opcional
+    title: string; // Título do card, opcional
+    readMore: typeof ReadMoreOption; // Componente ReadMoreOption, opcional
 }
 
 export function Cards() {
