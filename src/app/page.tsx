@@ -78,36 +78,46 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-950 text-white p-8">  
+    <main className="flex flex-col min-h-screen bg-gray-950 text-white p-6">  
       <Header 
         orcamentoOnClick={() => setIsFormularioContatoOpen(true)}
         serviceOnClick={() => setIsServicoOpen(true)}
         tecnologiasOnClick={() => setIsTecnologiasOpen(true)}
       > 
-
       </Header>
       
-      <div className="mb-15">
-        <h1 className="text-4xl font-bold text-white mb-4">
-          Transforme sua Qualidade com Inteligência
-        </h1>
-        <p className="text-white mb-6">
-          Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
-        </p>
-        <button 
-          onClick={() => setIsFormularioContatoOpen(true)}
-          className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
-            Solicite um orçamento
-        </button>
+      <div className="flex items-center justify-center gap-150 p-25">
+        
+        <div className="w-120">  
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Transforme sua Qualidade com Inteligência
+          </h1>
+          
+          <p className="text-white mb-6 h-70">
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+            Soluções modernas e inteligentes em Quality Assurance para empresas de todos os tamanhos.
+          </p>
+          
+          <button 
+            onClick={() => setIsFormularioContatoOpen(true)}
+            className="mt-5 bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+              Solicite um orçamento
+          </button>
+        </div>
 
-        {/* Imagem ilustrativa */}
-        <div className="flex-1 hidden md:flex justify-center">        
+        <div>
+          {/* Imagem ilustrativa */}
           <img src="/imagemheader.png" alt="Ilustração de QA" className="max-w-xs" />
         </div>
+        
       </div>                       
 
-      <div className="lex flex-col items-center">
-        <h2 className="text-4xl font-bold mb-6 text-center">Quem Somos</h2>
+      <div className="flex flex-col items-center mt-20">
+        <h2 className="text-4xl font-bold mb-6 text-center">Quem somos?</h2>
         <p className="text-gray-400 leading-relaxed mb-6 text-center">
           Somos uma equipe apaixonada por qualidade de software, composta por engenheiros experientes e comprometidos.<br />
           Atuamos com clientes globais, entregando serviços de QA de alto impacto com agilidade, transparência e tecnologia de ponta.

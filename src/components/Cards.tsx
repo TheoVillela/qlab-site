@@ -38,16 +38,15 @@ export function createCards(cardProps?: CreateCardsProps) {
     }
 
     return(
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-            <img className="rounded-t-lg" src={cardProps.image} alt="" />
-        </a>
-        <div className="p-5">
-            <a href="#">
+        <div className="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <div>
+                <img className="w-90 h-70 rounded-t-lg" src={cardProps.image} alt="" />
+            </div>
+            
+            <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{cardProps.title}</h5>
-            </a>
-            {cardProps.readMore()}
+                {cardProps.readMore()}
+            </div>
         </div>
-    </div>
     );
 }
