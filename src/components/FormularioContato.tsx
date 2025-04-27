@@ -9,7 +9,7 @@ export function FormularioContato({ onClose }: FormularioContatoProps){
           <div className="bg-gray-950 p-6 rounded-lg relative w-full max-w-md mx-4">
             
             <p className="text-gray-400 leading-relaxed mb-6">
-            Fale Conosco!
+              Fale Conosco!
             </p>
             
             {/* Botão para fechar */}
